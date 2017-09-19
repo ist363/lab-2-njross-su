@@ -1,0 +1,158 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+
+.flex-item {
+    margin: 10px;
+}
+
+/* FLEX CONTAINER ONE */
+
+.flex-container.one .flex-item {
+    background-color: blue;
+    flex-basis: 50%;
+}
+
+/* FLEX CONTAINER TWO */
+
+.flex-container.two .flex-item {
+    background-color: red;
+    flex-basis: auto;
+}
+
+.flex-container.two .flex-item.one {
+    flex-grow: 1;
+}
+
+.flex-container.two .flex-item.two {
+    flex-grow: 2;
+}
+
+.flex-container.two .flex-item.three {
+    flex-grow: 1;
+}
+
+/* FLEX CONTAINER THREE */
+
+.flex-container.three .flex-item {
+    background-color: purple;
+    flex-basis: auto;
+}
+
+.flex-container.three .flex-item.one {
+    flex-grow: 2;
+}
+
+.flex-container.three .flex-item.two {
+    flex-grow: 1;
+}
+
+.flex-container.three .flex-item.three {
+    flex-grow: 2;
+}
+
+/* FLEX CONTAINER FOUR */
+
+.flex-container.four {
+    justify-content: space-between;
+}
+
+.flex-container.four .flex-item {
+    background-color: green;
+    flex-basis: 33%;
+}
+
+/* FLEX CONTAINER FIVE */
+
+.flex-container.five {
+    justify-content: flex-start;
+}
+
+.flex-container.five .flex-item {
+    background-color: yellow;
+    flex-basis: 25%;
+}
+
+.flex-container.five .flex-item.three {
+    margin-left: auto;
+}
+
+/* =========================== PAGE TWO STYLES =========================== */
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    background-color: red;
+    flex-basis: 100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+    flex-grow: 1;
+}
+
+.content-one, .content-two {
+    background-color: lightgray;
+    border: 3px solid darkgray;
+    margin: 10px;
+}
+
+.content-one {
+    flex-grow: 3
+}
+
+.content-two {
+    flex-grow: 1;
+}
+
+.footer {
+    background-color: darkgray;
+    flex-basis: 100px;
+}
+
+/* =========================== PAGE THREE STYLES =========================== */
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.thirdpage {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    flex-wrap: wrap;
+}
+
+.thirdpage .flex-item {
+    height: 200px;
+    flex-basis: 280px;
+    margin: 10px;
+    background-color: brown;
+}
